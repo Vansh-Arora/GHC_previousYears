@@ -38,9 +38,14 @@ for i in range(numberOfLines):
     # adding each line as an object to photo list
     photoList.append(Photo(i,tempList[1],int(binary_string)))
 
+# To Sort
 def get_my_key(obj):
   return obj.num_of_tags
 photoList.sort(key=get_my_key, reverse = True)
+
+# Above this everything is fine
+
+# To get score(under development)
 
 k = 0
 answer = [photoList[k]]
